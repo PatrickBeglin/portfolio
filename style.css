@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Kettler';
+    src: url('./TRIALKettler-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kettler';
+    src: url('./TRIALKettler-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+.projectclass{
+    font-size: 15px;
+    width: 97vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.title{
+    font-size: 40px;
+}
+.info{
+    font-size: 18px;
+}
+.topcontainer{
+    width: 97vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 40vw;
+    margin: 0 auto;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+.footer{
+    color: grey;
+    font-size: 10px;
+    padding-left: 1vw;
+}
+
+.topvideo {
+
+    width: 97vw;
+    margin: 0 auto ; /* Center horizontally with auto margins */
+    display: block; /* Prevents potential spacing issues */
+    position: relative; /* Needed for absolute positioning of controls */
+}
+
+#troppvid {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* or contain */
+}
+#vid2{
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* or contain */
+    margin: 10px auto 0;
+}
+/* Hide all video controls */
+#troppvid::-webkit-media-controls {
+    display: none !important;
+}
+
+/* For Firefox (more limited control) */
+#troppvid::-moz-media-controls {
+    display: none !important;
+}
+
+/* Standard way (not widely supported yet) */
+#troppvid::media-controls {
+    display: none !important;
+}
+#vid2::-webkit-media-controls {
+    display: none !important;
+}
+
+/* For Firefox (more limited control) */
+#vid2::-moz-media-controls {
+    display: none !important;
+}
+
+/* Standard way (not widely supported yet) */
+#vid2::media-controls {
+    display: none !important;
+}
+.image_template{
+    z-index: 10;
+    width: 97vw;
+    margin: 10px auto 0; /* Center horizontally with auto margins */
+    display: block;
+}
+.image_template_small{
+    z-index: 10;
+    width: 50vw;
+    margin: 0px auto 0; /* Center horizontally with auto margins */
+    display: block;
+}
+
+.troppimages {
+    border-radius: 5px;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevents inline spacing issues */
+    object-fit: cover;
+    margin-top: 0.5%;
+
+}.troppimages_small {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevents inline spacing issues */
+    object-fit: cover;
+}
+
+
+
+body, html {
+    font-family: 'kettler' ;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Remove height: 100% to allow content to dictate height */
+}
+
+.header-content {
+    margin: 0 auto;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    background-color: white;
+    width: 100%; /* Use 100% for full width */
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 50px;
+    box-sizing: border-box; /* Include padding and border in width/height */
+    display: flex;
+    align-items: center;    /* Vertically center */
+}
+.header-right{
+    font-size: 15px;
+    display: flex;
+    gap: 40px;
+}
+.header-right a{
+    text-decoration: none; /* Removes underlines */
+    color: black;
+}
+.header-left a{
+    text-decoration: none; /* Removes underlines */
+    color: black;
+}
+.header-left a:hover{
+    color: red;
+}
+.header-right a:hover {
+    color: red;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+
+.image-container {
+    width: 97vw;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 0px; /* Adjust margin to account for header height + padding */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Prevents inline spacing issues */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevents inline spacing issues */
+    object-fit: cover;
+}
+.bottom-tab a{
+    text-decoration: none;
+    color: black;
+}
+.bottom-tab {
+    gap: 5vw;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-weight: bolder;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; /* Stays fixed relative to the viewport */
+    bottom: 2%; /* Align to the bottom edge */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    background-color: #ffffff; /* Example background color */
+    border-radius: 50px;
+    box-shadow:  2px 5px rgba(0, 0, 0, 0), inset 0 0 0 1px black;
+    z-index: 2; /* Ensure it's above other content */
+}
+
+.bottomlinks:hover {
+    cursor: pointer;
+    color: red;
+}
